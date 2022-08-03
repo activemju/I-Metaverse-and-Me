@@ -1,0 +1,186 @@
+/* RESET */
+
+body,p,ol,ul{
+    margin: 0;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+html{
+    font-size: 62.5%;
+    max-width: 425px;
+}
+
+body{
+    background-color: #000;
+}
+
+/* ============================================================================================== */
+
+@font-face{
+    src: url("./fonts/AppleSDGothicNeoR.ttf");
+    font-family: "AppleSDGothicNeoR00";
+}
+
+@font-face{
+    src: url("./fonts/Jost-500-Medium.otf");
+    font-family: "Jost* Medium";
+}
+
+@font-face{
+    src: url("./fonts/Baunk.ttf");
+    font-family: "Baunk";
+}
+
+/* ============================================================================================== */
+
+/* STYLING */
+
+.title{
+    font-family: 'Baunk';
+    font-style: normal;
+    font-size: 3.5rem;
+    line-height: 4.4rem;
+    letter-spacing: -0.05rem;
+
+    color: #774BFF;
+    text-shadow: -0.06rem 0 #774BFF, 0 -0.06rem #774BFF, -0.06rem 0 #774BFF, 0 -0.06rem #774BFF;
+}
+
+.title2,.title3{
+    font-family: 'Jost* Medium';
+    font-style: normal;
+    font-size: 3.0rem;
+    line-height: 2.3rem;
+    letter-spacing: -0.05rem;
+
+    color: #774BFF;
+}
+
+.text1, .text2, .text3,.text4{
+    color: #fff;
+}
+
+.text1{
+    font-family: 'Jost* Medium';
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+
+.text2,.text3,.text4{
+    font-family: 'AppleSDGothicNeoR00';
+    letter-spacing: -0.5px;
+}
+
+.text1, .text2{
+    font-size: 15px;
+    text-align: center;
+}
+
+.text3,.text4{
+    font-size: 13px;
+    line-height: 23px;
+}
+
+
+/* ============================================================================================== */
+
+/* LAYOUT */
+
+.main{
+    position: relative;
+    height: 100vh;
+}
+
+.title{
+    margin: 0 2rem 0 2rem;
+    position: absolute;
+    top: 2.93rem;
+}
+
+@media all and (min-height:700px){
+    .title{
+        top:7rem;
+    }
+}
+@media all and (min-height:800px){
+    .title{
+        top: 10rem;
+    }
+}
+@media all and (min-height:900px){
+    .title{
+        top: 12rem;
+    }
+}
+.backgroundVideo{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+
+.TextWithArrow{
+    width: 284px;
+    height: 95.7px;
+    position: absolute;
+    bottom: 2.93rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.TextWithArrow img{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.text3{
+    margin: 0.7rem 2.5rem 0 2.5rem;
+}
+
+.title2{
+    margin: 8.6rem 2.5rem 0 2.5rem;
+}
+
+.text4{
+    margin: 1.8rem 2.5rem 0 2.5rem;
+}
+
+.location iframe{
+    margin: 2.64rem 2.5rem 2.5rem 2.5rem;
+    background-color: #fff;
+}
+
+.logo{
+    width: 250px;
+    margin: auto;
+}
+
+.title3{
+    margin: 1.3rem 2.5rem 2.6rem 2.5rem;
+}
+
+
+/* ============================================================================================== */
+
+/* main 화면 반응형 */
+
+/* mobile S (가로) */
+
+@media all and (max-width:320px){
+    .title{
+        font-size: 2.7rem;
+        line-height: 3.6rem;
+    }
+}
+
+/* mobile M (가로) */
+
+@media all and (min-width:321px) and (max-width:375px){
+    .title{
+        font-size: 3.1rem;
+        line-height: 4rem;
+    }
+}
